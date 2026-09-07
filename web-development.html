@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web Development Services | Lahore Digital Solutions</title>
+
+  <meta name="description"
+    content="Professional web development services from Lahore Digital Solutions. Build fast, responsive, user-friendly websites designed for your business, customers, and long-term growth.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://lahoredigitalsolutions.github.io/web-development.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .web-breadcrumb {
+      margin-bottom: 28px;
+      font-size: 13px;
+      color: rgba(246, 242, 233, .58);
+    }
+
+    .web-breadcrumb a {
+      color: #c69a44;
+      text-decoration: none;
+    }
+
+    .web-breadcrumb span {
+      margin: 0 8px;
+      opacity: .5;
+    }
+
+    .web-intro,
+    .web-copy {
+      max-width: 880px;
+    }
+
+    .web-intro p,
+    .web-copy p {
+      font-size: 17px;
+      line-height: 1.85;
+      color: rgba(246, 242, 233, .74);
+    }
+
+    .web-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 45px;
+    }
+
+    .web-card {
+      padding: 30px;
+      border: 1px solid rgba(198, 154, 68, .18);
+      background: rgba(255, 255, 255, .025);
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .web-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(198, 154, 68, .5);
+    }
+
+    .web-number {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: #c69a44;
+      font-size: 13px;
+      letter-spacing: .12em;
+      font-weight: 600;
+    }
+
+    .web-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .web-card p {
+      line-height: 1.75;
+      color: rgba(246, 242, 233, .68);
+    }
+
+    .web-process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .web-process-item {
+      padding: 25px;
+      border-top: 2px solid #c69a44;
+      background: rgba(255, 255, 255, .025);
+    }
+
+    .web-process-item strong {
+      display: block;
+      margin-bottom: 10px;
+      font-family: "Spectral", serif;
+      font-size: 20px;
+    }
+
+    .web-process-item p {
+      margin: 0;
+      line-height: 1.7;
+      color: rgba(246, 242, 233, .65);
+      font-size: 14px;
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin-top: 35px;
+    }
+
+    .faq-item {
+      border-top: 1px solid rgba(246, 242, 233, .13);
+      padding: 24px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid rgba(246, 242, 233, .13);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      line-height: 1.75;
+      color: rgba(246, 242, 233, .68);
+    }
+
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .related-links a {
+      display: inline-block;
+      padding: 11px 16px;
+      border: 1px solid rgba(198, 154, 68, .28);
+      color: #f6f2e9;
+      text-decoration: none;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .related-links a:hover {
+      border-color: #c69a44;
+      color: #c69a44;
+    }
+
+    @media (max-width: 800px) {
+      .web-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .web-process {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .web-process {
+        grid-template-columns: 1fr;
+      }
+
+      .web-card {
+        padding: 23px;
+      }
+    }
+  </style>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What web development services do you provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lahore Digital Solutions provides responsive website development, business websites, landing pages, website redesign, performance-focused development, SEO-friendly website structure, and ongoing improvements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you build a mobile-friendly website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Websites can be developed with responsive layouts designed to provide a usable experience across desktops, tablets, and mobile devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can web development and SEO work together?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A technically sound website can provide a stronger foundation for SEO by supporting useful page structure, mobile usability, performance, internal linking, and search engine accessibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you redesign an existing website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. An existing website can be reviewed and redesigned to improve its visual presentation, usability, responsiveness, structure, content experience, and overall business goals."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="glow-field"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap header-row">
+
+      <a class="logo" href="index.html">
+
+        <div class="logo-mark">
+          <svg viewBox="0 0 40 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M10 28V13"
+              stroke="#f6f2e9"
+              stroke-width="3.4"
+              stroke-linecap="round"/>
+
+            <path d="M10 28H24"
+              stroke="#f6f2e9"
+              stroke-width="3.4"
+              stroke-linecap="round"/>
+
+            <path d="M14 24L20 18L24 21L31 12"
+              stroke="#c69a44"
+              stroke-width="2.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+
+          </svg>
+        </div>
+
+        <div class="logo-text">
+          Lahore Digital Solutions
+          <span>SEO &amp; Digital Marketing</span>
+        </div>
+
+      </a>
+
+      <div class="nav-actions">
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="btn"
+          href="https://wa.me/923250901475"
+          target="_blank"
+          rel="noopener">
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="page-hero">
+
+    <div class="wrap">
+
+      <div class="web-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="services.html">Services</a>
+        <span>/</span>
+        Web Development
+      </div>
+
+      <div class="eyebrow">Web Development Services</div>
+
+      <h1>Modern Web Development Built Around Your Business</h1>
+
+      <div class="web-intro">
+
+        <p>
+          Your website is often the first place potential customers learn
+          about your business. Lahore Digital Solutions creates responsive,
+          user-friendly websites that combine clean design, practical
+          functionality, strong structure, and a clear customer experience.
+          Whether you need a new business website, landing page, redesign, or
+          improvements to an existing site, our development approach starts
+          with what your website needs to accomplish.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Introduction -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head">
+
+        <div>
+          <div class="eyebrow">A Better Website Foundation</div>
+          <h2>Websites designed for people first</h2>
+        </div>
+
+      </div>
+
+      <div class="web-copy">
+
+        <p>
+          A professional website should do more than look attractive. It
+          should make it easy for visitors to understand your services, find
+          important information, navigate between pages, and take the next
+          step. It should also provide a solid technical foundation for
+          search engines and future digital marketing efforts.
+        </p>
+
+        <p>
+          We focus on clear layouts, responsive design, logical navigation,
+          useful content structure, and maintainable code. The result is a
+          website that can support your brand today while giving you room to
+          grow later.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Services -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head">
+
+        <div>
+          <div class="eyebrow">What We Build</div>
+          <h2>Web development services for growing businesses</h2>
+        </div>
+
+      </div>
+
+      <div class="web-grid">
+
+        <article class="web-card">
+          <span class="web-number">01</span>
+          <h3>Business Websites</h3>
+          <p>
+            Build a professional online presence with pages that clearly
+            communicate your business, services, expertise, and contact
+            options.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">02</span>
+          <h3>Responsive Web Design</h3>
+          <p>
+            Create layouts that adapt across desktop, tablet, and mobile
+            screens so visitors can comfortably interact with your website.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">03</span>
+          <h3>Landing Pages</h3>
+          <p>
+            Develop focused landing pages around specific services, offers,
+            campaigns, or marketing goals with clear calls to action.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">04</span>
+          <h3>Website Redesign</h3>
+          <p>
+            Refresh an outdated website with improved structure, visual
+            presentation, usability, mobile responsiveness, and clearer
+            customer journeys.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">05</span>
+          <h3>SEO-Friendly Development</h3>
+          <p>
+            Build pages with sensible structure, headings, internal links,
+            metadata support, crawlable content, and other foundations that
+            can support future SEO work.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">06</span>
+          <h3>Website Performance</h3>
+          <p>
+            Pay attention to page structure, assets, code, responsive
+            behaviour, and other factors that contribute to a smoother website
+            experience.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">07</span>
+          <h3>Website Maintenance</h3>
+          <p>
+            Keep your website current by making content, layout, structural,
+            and functionality improvements as your business changes.
+          </p>
+        </article>
+
+        <article class="web-card">
+          <span class="web-number">08</span>
+          <h3>Website Optimization</h3>
+          <p>
+            Review existing pages and identify opportunities to improve
+            navigation, content presentation, calls to action, and overall
+            user experience.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Process -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head">
+
+        <div>
+          <div class="eyebrow">Our Process</div>
+          <h2>From idea to a polished website</h2>
+        </div>
+
+      </div>
+
+      <div class="web-process">
+
+        <div class="web-process-item">
+          <strong>01. Discover</strong>
+          <p>
+            Understand your business, audience, services, goals, competitors,
+            and website requirements.
+          </p>
+        </div>
+
+        <div class="web-process-item">
+          <strong>02. Structure</strong>
+          <p>
+            Plan the pages, navigation, content hierarchy, calls to action,
+            and overall user journey.
+          </p>
+        </div>
+
+        <div class="web-process-item">
+          <strong>03. Develop</strong>
+          <p>
+            Build the website with responsive layouts, clear structure,
+            functionality, and a consistent visual system.
+          </p>
+        </div>
+
+        <div class="web-process-item">
+          <strong>04. Refine</strong>
+          <p>
+            Review the website across devices and improve usability,
+            presentation, performance, and content experience.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SEO Connection -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head">
+
+        <div>
+          <div class="eyebrow">Development + SEO</div>
+          <h2>A strong website gives your marketing a better foundation</h2>
+        </div>
+
+      </div>
+
+      <div class="web-copy">
+
+        <p>
+          Web development and SEO should not be treated as completely
+          separate projects. Website structure, mobile usability, navigation,
+          page hierarchy, internal linking, and technical accessibility can
+          all influence how people and search engines interact with a site.
+        </p>
+
+        <p>
+          That is why we build with future growth in mind. A well-structured
+          website makes it easier to add service pages, publish useful content,
+          create landing pages, connect internal links, and support a wider
+          digital marketing strategy.
+        </p>
+
+      </div>
+
+      <div class="related-links">
+        <a href="seo-services.html">SEO Services</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="google-ads.html">Google Ads</a>
+        <a href="services.html">All Services</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head">
+
+        <div>
+          <div class="eyebrow">Frequently Asked Questions</div>
+          <h2>Web development questions, answered</h2>
+        </div>
+
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <h3>What web development services do you provide?</h3>
+          <p>
+            We provide responsive business websites, landing pages, website
+            redesigns, SEO-friendly development, website optimization,
+            performance improvements, and ongoing maintenance.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you build a mobile-friendly website?</h3>
+          <p>
+            Yes. Websites can be developed with responsive layouts designed
+            for desktops, tablets, and mobile devices.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can web development and SEO work together?</h3>
+          <p>
+            Yes. A well-structured website can provide a stronger foundation
+            for SEO by supporting useful page structure, mobile usability,
+            internal linking, performance, and search engine accessibility.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you redesign an existing website?</h3>
+          <p>
+            Yes. Existing websites can be reviewed and redesigned to improve
+            visual presentation, usability, responsiveness, structure, and
+            the overall customer experience.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-band">
+
+    <div class="wrap cta-inner">
+
+      <div>
+        <div class="eyebrow">Build Your Online Presence</div>
+        <h2>Ready for a better website?</h2>
+      </div>
+
+      <a class="btn"
+        href="https://wa.me/923250901475"
+        target="_blank"
+        rel="noopener">
+        Message us on WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="wrap footer-row">
+
+      <div>
+        Lahore Digital Solutions — Johar Town Phase 1, Lahore
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
