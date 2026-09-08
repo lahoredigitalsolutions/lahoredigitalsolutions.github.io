@@ -1,326 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-<title>SEO Blog | Lahore Digital Solutions</title>
-<meta name="description" content="Read SEO guides about SEO services in Lahore, off-page SEO, on-page SEO, link building and local search optimization.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <title>SEO Blog | Lahore Digital Solutions</title>
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#080b12;
-    color:#f5f7fa;
-    line-height:1.7;
-}
+  <meta name="description"
+        content="Read SEO guides and practical tips about SEO services, off-page SEO, on-page SEO, link building and Google rankings.">
 
-.container{
-    max-width:1150px;
-    margin:auto;
-    padding:0 22px;
-}
+  <link rel="canonical"
+        href="https://lahoredigitalsolutions.github.io/blog.html">
 
-header{
-    padding:25px 0;
-    border-bottom:1px solid #202633;
-}
-
-.logo{
-    text-decoration:none;
-    color:#fff;
-    font-size:24px;
-    font-weight:800;
-}
-
-.logo span{
-    color:#55e6a5;
-}
-
-.hero{
-    padding:80px 0 55px;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:52px;
-    line-height:1.1;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:720px;
-    margin:auto;
-    color:#aab2c0;
-    font-size:18px;
-}
-
-.blog-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:28px;
-    padding:25px 0 70px;
-}
-
-.card{
-    background:#10151f;
-    border:1px solid #222b38;
-    border-radius:18px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-    border-color:#55e6a5;
-}
-
-.card img{
-    width:100%;
-    height:225px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:25px;
-}
-
-.category{
-    color:#55e6a5;
-    font-size:12px;
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-.card h2{
-    font-size:23px;
-    line-height:1.3;
-    margin:12px 0;
-}
-
-.card p{
-    color:#aab2c0;
-    margin-bottom:20px;
-}
-
-.read{
-    color:#55e6a5;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.cta{
-    text-align:center;
-    padding:45px;
-    margin-bottom:70px;
-    background:#10151f;
-    border:1px solid #222b38;
-    border-radius:20px;
-}
-
-.cta h2{
-    font-size:32px;
-    margin-bottom:10px;
-}
-
-.cta p{
-    color:#aab2c0;
-    margin-bottom:22px;
-}
-
-.btn{
-    display:inline-block;
-    background:#55e6a5;
-    color:#07100c;
-    padding:13px 26px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-footer{
-    border-top:1px solid #202633;
-    padding:30px 0;
-    text-align:center;
-    color:#7f8998;
-}
-
-@media(max-width:850px){
-    .blog-grid{
-        grid-template-columns:1fr;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .hero h1{
-        font-size:38px;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111111;
+      line-height: 1.7;
     }
-}
-</style>
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      width: 100%;
+      border-bottom: 1px solid #eeeeee;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #ff5a1f;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .menu a {
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ff5a1f;
+    }
+
+    .talk-btn {
+      background: #111111;
+      color: #ffffff !important;
+      padding: 11px 20px;
+      border-radius: 30px;
+    }
+
+    .talk-btn:hover {
+      background: #ff5a1f;
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 100px 20px 75px;
+      text-align: center;
+    }
+
+    .small-title {
+      color: #ff5a1f;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: -4px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #a5a5a5;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #666666;
+      font-size: 15px;
+    }
+
+    /* BLOG SECTION */
+
+    .blog-section {
+      background: #f7f7f5;
+      padding: 80px 20px;
+    }
+
+    .blog-container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 40px;
+      gap: 30px;
+    }
+
+    .section-heading h2 {
+      font-size: 42px;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    .section-heading h2 span {
+      color: #a5a5a5;
+    }
+
+    .section-heading p {
+      max-width: 430px;
+      color: #777777;
+      font-size: 14px;
+    }
+
+    /* BLOG GRID */
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border: 1px solid #e9e9e9;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-content {
+      padding: 25px;
+    }
+
+    .category {
+      color: #ff5a1f;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .blog-content h3 {
+      font-size: 23px;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+      margin-bottom: 12px;
+    }
+
+    .blog-content p {
+      color: #777777;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ff5a1f;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .read-more:hover {
+      color: #111111;
+    }
+
+    /* BLACK FEATURE SECTION */
+
+    .feature {
+      background: #0b0b0b;
+      color: #ffffff;
+      padding: 85px 20px;
+    }
+
+    .feature-inner {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .feature .small-title {
+      color: #ff5a1f;
+    }
+
+    .feature h2 {
+      font-size: clamp(35px, 5vw, 55px);
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .feature h2 span {
+      color: #777777;
+    }
+
+    .feature p {
+      max-width: 650px;
+      margin: auto;
+      color: #aaaaaa;
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 65px 30px;
+      background: #0b0b0b;
+      border-radius: 18px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border: 1px solid rgba(255,90,31,0.3);
+      border-radius: 50%;
+      right: -80px;
+      top: -120px;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #aaaaaa;
+      max-width: 550px;
+      margin: 0 auto 25px;
+      font-size: 14px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #ff5a1f;
+      color: #ffffff;
+      padding: 13px 25px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0b0b0b;
+      color: #ffffff;
+      padding: 65px 20px 30px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 50px;
+      padding-bottom: 45px;
+    }
+
+    .footer-logo {
+      font-size: 19px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .footer-logo span {
+      color: #ff5a1f;
+    }
+
+    .footer-about {
+      color: #888888;
+      font-size: 12px;
+      max-width: 300px;
+    }
+
+    .footer-title {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #888888;
+      font-size: 11px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #ff5a1f;
+    }
+
+    .copyright {
+      border-top: 1px solid #222222;
+      padding-top: 22px;
+      color: #666666;
+      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .menu {
+        gap: 12px;
+        font-size: 10px;
+      }
+
+      .talk-btn {
+        padding: 8px 13px;
+      }
+
+      .hero {
+        padding: 70px 20px 55px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading h2 {
+        margin-bottom: 18px;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .copyright {
+        display: block;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .nav {
+        height: 60px;
+      }
+
+      .logo {
+        font-size: 15px;
+      }
+
+      .menu a:nth-child(-n+4) {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .section-heading h2 {
+        font-size: 34px;
+      }
+
+      .cta h2 {
+        font-size: 34px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-<div class="container">
+  <div class="nav">
 
-<a href="index.html" class="logo">
-Lahore Digital <span>Solutions</span>
-</a>
+    <a href="index.html" class="logo">
+      Lahore <span>Digital</span>
+    </a>
 
-</div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">SEO Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#faq">FAQ</a>
+
+      <a href="https://wa.me/923250901475"
+         target="_blank"
+         class="talk-btn">
+        Let's Talk
+      </a>
+    </nav>
+
+  </div>
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
-<div class="container">
+  <div class="small-title">
+    SEO Insights & Resources
+  </div>
 
-<h1>SEO Insights & Resources</h1>
+  <h1>
+    Learn. <span>Optimize.</span><br>
+    Grow.
+  </h1>
 
-<p>
-Practical SEO guides covering SEO services, on-page SEO,
-off-page SEO, link building and search visibility.
-</p>
+  <p>
+    Practical SEO guides, strategies and tips to help businesses
+    improve search visibility, build authority and generate more
+    organic traffic.
+  </p>
 
-</div>
+</section>
+
+
+<!-- BLOGS -->
+
+<section class="blog-section">
+
+  <div class="blog-container">
+
+    <div class="section-heading">
+
+      <div>
+        <div class="small-title">
+          Latest Articles
+        </div>
+
+        <h2>
+          SEO knowledge.<br>
+          <span>Real strategies.</span>
+        </h2>
+      </div>
+
+      <p>
+        Explore our latest SEO guides covering on-page SEO,
+        off-page SEO, link building and strategies for better
+        Google rankings.
+      </p>
+
+    </div>
+
+
+    <div class="blog-grid">
+
+
+      <!-- BLOG 1 -->
+
+      <article class="blog-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&w=1000&q=80"
+          alt="Best SEO Services in Lahore"
+          class="blog-image"
+        >
+
+        <div class="blog-content">
+
+          <div class="category">
+            SEO Services
+          </div>
+
+          <h3>
+            Best SEO Services in Lahore:
+            What Businesses Should Look For
+          </h3>
+
+          <p>
+            Learn what professional SEO services should include
+            and how the right SEO strategy can help businesses
+            improve online visibility.
+          </p>
+
+          <a
+            href="blog/best-seo-services-in-lahore.html"
+            class="read-more">
+            Read Article →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- BLOG 2 -->
+
+      <article class="blog-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80"
+          alt="Off Page SEO Services Near Me"
+          class="blog-image"
+        >
+
+        <div class="blog-content">
+
+          <div class="category">
+            Off-Page SEO
+          </div>
+
+          <h3>
+            Off Page SEO Services Near Me:
+            A Complete Guide
+          </h3>
+
+          <p>
+            Discover how backlinks, guest posting, blogger
+            outreach and other off-page SEO strategies can
+            improve website authority.
+          </p>
+
+          <a
+            href="blog/off-page-seo-services-near-me.html"
+            class="read-more">
+            Read Article →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- BLOG 3 -->
+
+      <article class="blog-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80"
+          alt="On Page SEO Services"
+          class="blog-image"
+        >
+
+        <div class="blog-content">
+
+          <div class="category">
+            On-Page SEO
+          </div>
+
+          <h3>
+            On Page SEO Services:
+            What Is Included?
+          </h3>
+
+          <p>
+            Understand the key elements of on-page SEO including
+            title tags, headings, content optimization, internal
+            linking and image optimization.
+          </p>
+
+          <a
+            href="blog/on-page-seo-services.html"
+            class="read-more">
+            Read Article →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<main class="container">
+<!-- BLACK SECTION -->
 
-<div class="blog-grid">
+<section class="feature">
 
+  <div class="feature-inner">
 
-<!-- BLOG 1 -->
+    <div class="small-title">
+      Build Better Rankings
+    </div>
 
-<article class="card">
+    <h2>
+      Better SEO.<br>
+      <span>Better opportunities.</span>
+    </h2>
 
-<img
-src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85"
-alt="Best SEO services in Lahore">
+    <p>
+      SEO is not about quick tricks. A strong strategy combines
+      technical improvements, useful content, authority building
+      and consistent optimization.
+    </p>
 
-<div class="card-content">
-
-<span class="category">SEO Services</span>
-
-<h2>
-Best SEO Services in Lahore: What Businesses Should Look For
-</h2>
-
-<p>
-Discover how professional SEO services can help Lahore businesses
-improve search visibility, organic traffic and online growth.
-</p>
-
-<a class="read"
-href="blog/best-seo-services-in-lahore.html">
-Read Article →
-</a>
-
-</div>
-
-</article>
-
-
-<!-- BLOG 2 -->
-
-<article class="card">
-
-<img
-src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
-alt="Off page SEO services near me">
-
-<div class="card-content">
-
-<span class="category">Off-Page SEO</span>
-
-<h2>
-Off Page SEO Services Near Me: A Complete Guide
-</h2>
-
-<p>
-Learn how off-page SEO, backlinks, guest posting and blogger outreach
-can support your website's search visibility.
-</p>
-
-<a class="read"
-href="blog/off-page-seo-services-near-me.html">
-Read Article →
-</a>
-
-</div>
-
-</article>
-
-
-<!-- BLOG 3 -->
-
-<article class="card">
-
-<img
-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
-alt="On page SEO services">
-
-<div class="card-content">
-
-<span class="category">On-Page SEO</span>
-
-<h2>
-On Page SEO Services: What Is Included?
-</h2>
-
-<p>
-Learn about titles, headings, content, internal links, URLs,
-metadata and other important on-page SEO elements.
-</p>
-
-<a class="read"
-href="blog/on-page-seo-services.html">
-Read Article →
-</a>
-
-</div>
-
-</article>
-
-
-</div>
-
-
-<section class="cta">
-
-<h2>Need Help With SEO?</h2>
-
-<p>
-Tell us about your website and let's discuss your SEO goals.
-</p>
-
-<a
-class="btn"
-href="https://wa.me/923250901475?text=Hi%20Lahore%20Digital%20Solutions%2C%20I%20need%20help%20with%20SEO."
-target="_blank">
-Discuss Your Website
-</a>
+  </div>
 
 </section>
 
-</main>
 
+<!-- CTA -->
+
+<div class="cta">
+
+  <div class="small-title">
+    Need SEO Help?
+  </div>
+
+  <h2>
+    Let's grow your<br>
+    <span>website together.</span>
+  </h2>
+
+  <p>
+    If your website is not getting the visibility or traffic
+    you expect, let's discuss your SEO requirements.
+  </p>
+
+  <a
+    href="https://wa.me/923250901475"
+    target="_blank"
+    class="cta-btn">
+    Discuss Your SEO Problem →
+  </a>
+
+</div>
+
+
+<!-- FOOTER -->
 
 <footer>
 
-<div class="container">
+  <div class="footer-inner">
 
-© 2026 Lahore Digital Solutions · SEO · Strategy · Growth
+    <div class="footer-grid">
 
-</div>
+      <div>
+        <div class="footer-logo">
+          Lahore <span>Digital</span>
+        </div>
+
+        <p class="footer-about">
+          Professional SEO solutions helping businesses improve
+          search visibility, organic rankings and online growth.
+        </p>
+      </div>
+
+
+      <div>
+        <div class="footer-title">
+          Explore
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#services">SEO Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="footer-title">
+          SEO
+        </div>
+
+        <div class="footer-links">
+          <a href="blog/best-seo-services-in-lahore.html">
+            SEO Services
+          </a>
+
+          <a href="blog/off-page-seo-services-near-me.html">
+            Off-Page SEO
+          </a>
+
+          <a href="blog/on-page-seo-services.html">
+            On-Page SEO
+          </a>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="footer-title">
+          Let's Talk
+        </div>
+
+        <div class="footer-links">
+          <a
+            href="https://wa.me/923250901475"
+            target="_blank">
+            WhatsApp
+          </a>
+
+          <a href="index.html#contact">
+            Contact
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      <span>
+        © 2026 Lahore Digital Solutions. All rights reserved.
+      </span>
+
+      <span>
+        SEO Services in Lahore
+      </span>
+
+    </div>
+
+  </div>
 
 </footer>
 
