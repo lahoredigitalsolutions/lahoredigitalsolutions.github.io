@@ -1,2289 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SEO Services in Lahore | Lahore Digital Solutions</title>
-
-  <meta name="description"
-    content="Lahore Digital Solutions provides professional SEO services in Lahore including On-Page SEO, Technical SEO, Off-Page SEO, Local SEO, Link Building and Google Business Profile optimization.">
-
-  <meta name="keywords"
-    content="SEO Services in Lahore, SEO Agency Lahore, SEO Expert Lahore, SEO Company Lahore, Local SEO Lahore, Technical SEO Lahore, On Page SEO Lahore, Off Page SEO Lahore, Link Building Services Lahore, Google Business Profile Optimization Lahore">
-
-  <meta name="author" content="Lahore Digital Solutions">
-
-  <link rel="canonical" href="https://lahoredigitalsolutions.github.io/">
-
-  <meta name="google-site-verification"
-    content="moa__p4BaNwnkNGadOyNpuezdPwiZvLxVuAFObQTD9s">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-    rel="stylesheet">
-
-  <style>
-
-    :root {
-      --cream: #fffaf2;
-      --white: #ffffff;
-      --text: #292333;
-      --muted: #756f82;
-
-      --purple: #7357ff;
-      --pink: #ff5f9e;
-      --orange: #ff9f43;
-      --yellow: #ffd166;
-      --green: #35c78a;
-      --red: #ff6b6b;
-
-      --soft-purple: #f0edff;
-      --soft-pink: #fff0f6;
-      --soft-orange: #fff4e7;
-      --soft-green: #eafaf3;
-
-      --border: #eee9e2;
-      --shadow: 0 20px 50px rgba(80, 60, 90, .10);
-      --radius: 26px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "DM Sans", sans-serif;
-      color: var(--text);
-      background: var(--cream);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, h4 {
-      font-family: "Plus Jakarta Sans", sans-serif;
-      line-height: 1.2;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      width: min(1160px, 92%);
-      margin: auto;
-    }
-
-    /* ================= NAVBAR ================= */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 250, 242, .94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      font-family: "Plus Jakarta Sans", sans-serif;
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: -.7px;
-    }
-
-    .logo span:nth-child(1) {
-      color: var(--purple);
-    }
-
-    .logo span:nth-child(2) {
-      color: var(--pink);
-    }
-
-    .logo span:nth-child(3) {
-      color: var(--orange);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 27px;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .nav-links a {
-      transition: .25s;
-    }
-
-    .nav-links a:hover {
-      color: var(--purple);
-    }
-
-    .nav-btn {
-      background: var(--purple);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 50px;
-      font-weight: 700;
-      box-shadow: 0 10px 22px rgba(115, 87, 255, .22);
-    }
-
-    .mobile-menu {
-      display: none;
-      border: 0;
-      background: transparent;
-      font-size: 28px;
-      cursor: pointer;
-    }
-
-    /* ================= HERO ================= */
-
-    .hero {
-      padding: 90px 0 75px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero:before {
-      content: "";
-      position: absolute;
-      width: 360px;
-      height: 360px;
-      background: #eee9ff;
-      border-radius: 50%;
-      top: -170px;
-      left: -130px;
-      z-index: -1;
-    }
-
-    .hero:after {
-      content: "";
-      position: absolute;
-      width: 320px;
-      height: 320px;
-      background: #ffe8f1;
-      border-radius: 50%;
-      right: -140px;
-      top: 40px;
-      z-index: -1;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 65px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: white;
-      border: 1px solid var(--border);
-      padding: 8px 14px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--purple);
-      margin-bottom: 20px;
-      box-shadow: 0 8px 20px rgba(70, 50, 90, .06);
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      background: var(--green);
-      border-radius: 50%;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 5vw, 68px);
-      letter-spacing: -3px;
-      margin-bottom: 23px;
-    }
-
-    .hero h1 .purple {
-      color: var(--purple);
-    }
-
-    .hero h1 .pink {
-      color: var(--pink);
-    }
-
-    .hero p {
-      color: var(--muted);
-      font-size: 18px;
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-    }
-
-    .primary-btn {
-      background: var(--purple);
-      color: white;
-      padding: 15px 23px;
-      border-radius: 13px;
-      font-weight: 700;
-      box-shadow: 0 12px 25px rgba(115, 87, 255, .22);
-    }
-
-    .secondary-btn {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 14px 22px;
-      border-radius: 13px;
-      font-weight: 700;
-    }
-
-    /* ================= SEO DASHBOARD GRAPHIC ================= */
-
-    .dashboard {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 30px;
-      padding: 22px;
-      box-shadow: var(--shadow);
-      transform: rotate(1deg);
-    }
-
-    .dashboard-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .dashboard-title {
-      font-weight: 800;
-      font-size: 15px;
-    }
-
-    .mini-dots {
-      display: flex;
-      gap: 5px;
-    }
-
-    .mini-dots span {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-    }
-
-    .mini-dots span:nth-child(1) {
-      background: var(--pink);
-    }
-
-    .mini-dots span:nth-child(2) {
-      background: var(--yellow);
-    }
-
-    .mini-dots span:nth-child(3) {
-      background: var(--green);
-    }
-
-    .search-box {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      background: #f8f6ff;
-      padding: 13px;
-      border-radius: 12px;
-      margin-bottom: 18px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .search-icon {
-      width: 30px;
-      height: 30px;
-      background: var(--purple);
-      color: white;
-      border-radius: 9px;
-      display: grid;
-      place-items: center;
-      font-size: 15px;
-    }
-
-    .rank-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-      margin: 12px 0;
-    }
-
-    .rank-info {
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    .rank-bar {
-      height: 8px;
-      background: #f1edf8;
-      border-radius: 20px;
-      overflow: hidden;
-      margin-top: 6px;
-    }
-
-    .rank-fill {
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .fill-purple {
-      width: 82%;
-      background: var(--purple);
-    }
-
-    .fill-pink {
-      width: 68%;
-      background: var(--pink);
-    }
-
-    .fill-orange {
-      width: 57%;
-      background: var(--orange);
-    }
-
-    .rank-number {
-      font-weight: 800;
-      color: var(--green);
-    }
-
-    .chart {
-      height: 145px;
-      background: linear-gradient(180deg, #faf8ff, #fff);
-      border-radius: 17px;
-      margin-top: 20px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid #f0ebfa;
-    }
-
-    .chart svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .floating-card {
-      position: absolute;
-      background: white;
-      border: 1px solid var(--border);
-      padding: 13px 16px;
-      border-radius: 15px;
-      box-shadow: var(--shadow);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .floating-card.one {
-      right: -20px;
-      top: 65px;
-      color: var(--green);
-    }
-
-    .floating-card.two {
-      left: -25px;
-      bottom: 60px;
-      color: var(--pink);
-    }
-
-    /* ================= TRUST STRIP ================= */
-
-    .trust {
-      padding: 18px 0 65px;
-    }
-
-    .trust-box {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 20px 25px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
-      box-shadow: 0 10px 30px rgba(80, 60, 90, .05);
-    }
-
-    .trust-item {
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    .trust-item span {
-      color: var(--purple);
-    }
-
-    /* ================= SECTION ================= */
-
-    section {
-      padding: 95px 0;
-    }
-
-    .section-heading {
-      max-width: 720px;
-      margin: 0 auto 50px;
-      text-align: center;
-    }
-
-    .section-label {
-      color: var(--pink);
-      font-weight: 800;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(32px, 4vw, 46px);
-      letter-spacing: -2px;
-      margin-bottom: 15px;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-    }
-
-    /* ================= SERVICES ================= */
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .service-card {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 28px;
-      border-radius: var(--radius);
-      box-shadow: 0 12px 30px rgba(80, 60, 90, .06);
-      transition: .3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow);
-    }
-
-    .service-icon {
-      width: 62px;
-      height: 62px;
-      border-radius: 19px;
-      display: grid;
-      place-items: center;
-      font-size: 28px;
-      margin-bottom: 22px;
-    }
-
-    .icon-purple {
-      background: var(--soft-purple);
-    }
-
-    .icon-pink {
-      background: var(--soft-pink);
-    }
-
-    .icon-orange {
-      background: var(--soft-orange);
-    }
-
-    .icon-green {
-      background: var(--soft-green);
-    }
-
-    .service-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .service-card p {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .service-card ul {
-      list-style: none;
-    }
-
-    .service-card li {
-      font-size: 13px;
-      margin: 7px 0;
-      font-weight: 600;
-    }
-
-    .service-card li:before {
-      content: "✓";
-      color: var(--green);
-      font-weight: 900;
-      margin-right: 8px;
-    }
-
-    /* ================= ABOUT ================= */
-
-    .about {
-      background: white;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .visual-box {
-      min-height: 420px;
-      background: #f7f3ff;
-      border-radius: 35px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid #ebe3ff;
-    }
-
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-    }
-
-    .circle.a {
-      width: 240px;
-      height: 240px;
-      background: #e3dcff;
-      top: -80px;
-      left: -50px;
-    }
-
-    .circle.b {
-      width: 190px;
-      height: 190px;
-      background: #ffdce9;
-      bottom: -60px;
-      right: -30px;
-    }
-
-    .seo-document {
-      position: absolute;
-      width: 250px;
-      background: white;
-      border-radius: 20px;
-      padding: 22px;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%) rotate(-4deg);
-      box-shadow: var(--shadow);
-    }
-
-    .document-head {
-      height: 18px;
-      width: 70%;
-      background: var(--purple);
-      border-radius: 8px;
-      margin-bottom: 18px;
-    }
-
-    .document-line {
-      height: 9px;
-      background: #eeeaf5;
-      border-radius: 10px;
-      margin: 9px 0;
-    }
-
-    .document-line.short {
-      width: 60%;
-    }
-
-    .check {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .check i {
-      width: 22px;
-      height: 22px;
-      background: var(--green);
-      color: white;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-style: normal;
-    }
-
-    .about-content h2 {
-      font-size: clamp(34px, 4vw, 48px);
-      letter-spacing: -2px;
-      margin-bottom: 20px;
-    }
-
-    .about-content p {
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    .feature-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 25px;
-    }
-
-    .feature {
-      background: var(--cream);
-      border-radius: 13px;
-      padding: 13px;
-      font-weight: 700;
-      font-size: 13px;
-    }
-
-    /* ================= SEO SPECIALTIES ================= */
-
-    .specialty-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-    }
-
-    .specialty {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 25px;
-      padding: 28px;
-      display: grid;
-      grid-template-columns: 70px 1fr;
-      gap: 20px;
-      align-items: start;
-      box-shadow: 0 10px 28px rgba(80, 60, 90, .05);
-    }
-
-    .specialty-icon {
-      width: 62px;
-      height: 62px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      font-size: 27px;
-    }
-
-    .specialty h3 {
-      margin-bottom: 8px;
-      font-size: 19px;
-    }
-
-    .specialty p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* ================= LOCAL SEO ================= */
-
-    .local {
-      background: #fff1f6;
-    }
-
-    .local-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      align-items: center;
-    }
-
-    .local h2 {
-      font-size: clamp(34px, 4vw, 48px);
-      letter-spacing: -2px;
-      margin-bottom: 18px;
-    }
-
-    .local p {
-      color: var(--muted);
-      margin-bottom: 22px;
-    }
-
-    .local-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .local-list div {
-      background: white;
-      padding: 12px 15px;
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 13px;
-    }
-
-    .map-card {
-      height: 370px;
-      background: #fffafc;
-      border: 1px solid #f3dce6;
-      border-radius: 30px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .map-lines {
-      position: absolute;
-      inset: 0;
-      opacity: .6;
-    }
-
-    .road {
-      position: absolute;
-      height: 3px;
-      background: #eadde5;
-      transform: rotate(-20deg);
-      width: 140%;
-      left: -50px;
-    }
-
-    .road:nth-child(1) {
-      top: 80px;
-    }
-
-    .road:nth-child(2) {
-      top: 170px;
-      transform: rotate(12deg);
-    }
-
-    .road:nth-child(3) {
-      top: 270px;
-      transform: rotate(-10deg);
-    }
-
-    .pin {
-      position: absolute;
-      width: 55px;
-      height: 55px;
-      background: var(--pink);
-      color: white;
-      border-radius: 50% 50% 50% 5px;
-      transform: rotate(-45deg);
-      display: grid;
-      place-items: center;
-      box-shadow: 0 12px 25px rgba(255, 95, 158, .28);
-    }
-
-    .pin span {
-      transform: rotate(45deg);
-      font-size: 22px;
-    }
-
-    .pin.one {
-      left: 25%;
-      top: 32%;
-    }
-
-    .pin.two {
-      right: 23%;
-      top: 50%;
-      background: var(--purple);
-    }
-
-    .pin.three {
-      left: 47%;
-      bottom: 15%;
-      background: var(--orange);
-    }
-
-    .lahore-label {
-      position: absolute;
-      left: 50%;
-      top: 48%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 13px 20px;
-      border-radius: 14px;
-      font-weight: 800;
-      box-shadow: var(--shadow);
-      color: var(--purple);
-    }
-
-    /* ================= PROCESS ================= */
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-    }
-
-    .process-card {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 25px;
-      border-radius: 22px;
-      position: relative;
-    }
-
-    .process-number {
-      font-size: 42px;
-      font-weight: 900;
-      color: #eee9ff;
-      position: absolute;
-      right: 18px;
-      top: 10px;
-    }
-
-    .process-card h3 {
-      margin-top: 35px;
-      margin-bottom: 9px;
-      font-size: 18px;
-    }
-
-    .process-card p {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* ================= KEYWORDS ================= */
-
-    .keywords {
-      background: white;
-    }
-
-    .keyword-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .keyword {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      padding: 11px 17px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .keyword:nth-child(3n) {
-      color: var(--pink);
-    }
-
-    .keyword:nth-child(3n+1) {
-      color: var(--purple);
-    }
-
-    .keyword:nth-child(3n+2) {
-      color: #d17a00;
-    }
-
-    /* ================= FAQ ================= */
-
-    .faq {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    details {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 15px;
-      margin-bottom: 12px;
-      padding: 18px 20px;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 800;
-    }
-
-    details p {
-      color: var(--muted);
-      margin-top: 12px;
-      font-size: 14px;
-    }
-
-    /* ================= CTA ================= */
-
-    .cta {
-      padding: 35px 0 95px;
-    }
-
-    .cta-box {
-      background: linear-gradient(125deg, #7357ff, #ff5f9e, #ff9f43);
-      color: white;
-      padding: 60px;
-      border-radius: 32px;
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .cta-box:before,
-    .cta-box:after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255,255,255,.12);
-    }
-
-    .cta-box:before {
-      width: 240px;
-      height: 240px;
-      top: -130px;
-      left: -80px;
-    }
-
-    .cta-box:after {
-      width: 300px;
-      height: 300px;
-      right: -130px;
-      bottom: -180px;
-    }
-
-    .cta-box h2 {
-      font-size: clamp(32px, 4vw, 48px);
-      letter-spacing: -2px;
-      margin-bottom: 15px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .cta-box p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      opacity: .94;
-      position: relative;
-      z-index: 2;
-    }
-
-    .whatsapp {
-      display: inline-flex;
-      background: white;
-      color: #198754;
-      padding: 15px 24px;
-      border-radius: 13px;
-      font-weight: 800;
-      position: relative;
-      z-index: 2;
-    }
-
-    /* ================= FOOTER ================= */
-
-    footer {
-      background: white;
-      border-top: 1px solid var(--border);
-      padding: 55px 0 25px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 45px;
-      margin-bottom: 40px;
-    }
-
-    footer h3 {
-      margin-bottom: 15px;
-    }
-
-    footer p {
-      color: var(--muted);
-      font-size: 14px;
-      max-width: 420px;
-    }
-
-    footer ul {
-      list-style: none;
-    }
-
-    footer li {
-      margin: 8px 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    footer li a:hover {
-      color: var(--purple);
-    }
-
-    .copyright {
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align: center;
-    }
-
-    /* ================= MOBILE ================= */
-
-    @media(max-width: 900px) {
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        left: 4%;
-        right: 4%;
-        top: 75px;
-        background: white;
-        padding: 20px;
-        border-radius: 18px;
-        box-shadow: var(--shadow);
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .mobile-menu {
-        display: block;
-      }
-
-      .nav-btn {
-        text-align: center;
-      }
-
-      .hero-grid,
-      .about-grid,
-      .local-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 65px;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .process-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media(max-width: 600px) {
-
-      .hero h1 {
-        letter-spacing: -2px;
-      }
-
-      section {
-        padding: 70px 0;
-      }
-
-      .services-grid,
-      .specialty-grid,
-      .process-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .feature-list {
-        grid-template-columns: 1fr;
-      }
-
-      .cta-box {
-        padding: 40px 22px;
-      }
-
-      .dashboard {
-        margin: 10px;
-      }
-
-      .floating-card {
-        display: none;
-      }
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEO Services in Lahore | Lahore Digital Solutions</title>
+
+<meta name="description" content="Lahore Digital Solutions provides professional SEO services in Lahore including On-Page SEO, Technical SEO, Off-Page SEO, Local SEO and Link Building.">
+
+<link rel="canonical" href="https://lahoredigitalsolutions.github.io/">
+
+<meta name="google-site-verification" content="moa__p4BaNwnkNGadOyNpuezdPwiZvLxVuAFObQTD9s">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--cream:#fff8ed;
+--cream2:#fff1dc;
+--white:#fffdf9;
+--brown:#49352d;
+--muted:#7d6c63;
+--terracotta:#d8664c;
+--coral:#ef8066;
+--sage:#78a878;
+--green:#4f9568;
+--peach:#ffc49b;
+--gold:#e7ad45;
+--lavender:#b69ad9;
+--border:#eadfd2;
+--shadow:0 18px 45px rgba(92,63,45,.10);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+body{
+font-family:"DM Sans",sans-serif;
+background:var(--cream);
+color:var(--brown);
+line-height:1.7;
+}
+
+h1,h2,h3,h4{
+font-family:"Plus Jakarta Sans",sans-serif;
+line-height:1.2;
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+width:min(1160px,92%);
+margin:auto;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,248,237,.94);
+backdrop-filter:blur(15px);
+border-bottom:1px solid var(--border);
+}
+
+.nav{
+min-height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px;
+}
+
+.logo{
+font-family:"Plus Jakarta Sans";
+font-size:20px;
+font-weight:800;
+letter-spacing:-.7px;
+}
+
+.logo .a{color:var(--terracotta)}
+.logo .b{color:var(--sage)}
+.logo .c{color:var(--gold)}
+
+.navlinks{
+display:flex;
+align-items:center;
+gap:25px;
+font-size:14px;
+font-weight:700;
+}
+
+.navlinks a:hover{color:var(--terracotta)}
+
+.nav-cta{
+background:var(--terracotta);
+color:white!important;
+padding:11px 19px;
+border-radius:50px;
+box-shadow:0 8px 20px rgba(216,102,76,.20);
+}
+
+.menu{
+display:none;
+border:0;
+background:none;
+font-size:27px;
+color:var(--brown);
+cursor:pointer;
+}
+
+.hero{
+padding:100px 0 80px;
+position:relative;
+overflow:hidden;
+}
+
+.hero:before{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+border-radius:50%;
+background:#ffe1c8;
+left:-160px;
+top:-100px;
+z-index:-1;
+}
+
+.hero:after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+border-radius:50%;
+background:#e4f0df;
+right:-120px;
+top:60px;
+z-index:-1;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.badge{
+display:inline-flex;
+gap:8px;
+align-items:center;
+background:white;
+border:1px solid var(--border);
+padding:8px 14px;
+border-radius:50px;
+font-size:13px;
+font-weight:700;
+color:var(--terracotta);
+margin-bottom:20px;
+box-shadow:0 7px 20px rgba(80,50,30,.06);
+}
+
+.badge i{
+width:8px;
+height:8px;
+background:var(--sage);
+border-radius:50%;
+}
+
+.hero h1{
+font-size:clamp(42px,5vw,67px);
+letter-spacing:-3px;
+margin-bottom:22px;
+}
+
+.hero h1 span{color:var(--terracotta)}
+
+.hero p{
+color:var(--muted);
+font-size:18px;
+max-width:600px;
+margin-bottom:28px;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 22px;
+border-radius:13px;
+font-weight:800;
+transition:.25s;
+}
+
+.btn:hover{transform:translateY(-3px)}
+
+.btn-main{
+background:var(--terracotta);
+color:white;
+box-shadow:0 10px 24px rgba(216,102,76,.22);
+}
+
+.btn-light{
+background:white;
+border:1px solid var(--border);
+}
+
+.hero-art{
+background:white;
+border:1px solid var(--border);
+border-radius:35px;
+padding:25px;
+box-shadow:var(--shadow);
+transform:rotate(1.5deg);
+}
+
+.browser{
+border:1px solid var(--border);
+border-radius:20px;
+overflow:hidden;
+background:#fffaf4;
+}
+
+.browser-top{
+height:48px;
+display:flex;
+align-items:center;
+gap:6px;
+padding:0 15px;
+background:#f7eadc;
+}
+
+.browser-top i{
+width:8px;
+height:8px;
+border-radius:50%;
+}
+
+.browser-top i:nth-child(1){background:var(--coral)}
+.browser-top i:nth-child(2){background:var(--gold)}
+.browser-top i:nth-child(3){background:var(--sage)}
+
+.browser-body{padding:25px}
+
+.search{
+height:45px;
+background:white;
+border:1px solid var(--border);
+border-radius:12px;
+display:flex;
+align-items:center;
+padding:0 13px;
+font-size:13px;
+color:var(--muted);
+margin-bottom:20px;
+}
+
+.search span{
+background:var(--terracotta);
+color:white;
+width:30px;
+height:30px;
+border-radius:9px;
+display:grid;
+place-items:center;
+margin-right:10px;
+}
+
+.metric{
+background:white;
+border:1px solid var(--border);
+padding:15px;
+border-radius:14px;
+margin:10px 0;
+}
+
+.metric-top{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.metric-top strong{color:var(--green)}
+
+.bar{
+height:8px;
+background:#f0e8de;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+border-radius:20px;
+}
+
+.bar.one span{width:84%;background:var(--terracotta)}
+.bar.two span{width:70%;background:var(--sage)}
+.bar.three span{width:58%;background:var(--gold)}
+
+.graph{
+height:130px;
+margin-top:15px;
+background:#fffaf5;
+border-radius:15px;
+overflow:hidden;
+}
+
+.graph svg{width:100%;height:100%}
+
+section{padding:90px 0}
+
+.heading{
+text-align:center;
+max-width:720px;
+margin:0 auto 45px;
+}
+
+.label{
+color:var(--terracotta);
+font-size:13px;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:1px;
+margin-bottom:9px;
+}
+
+.heading h2{
+font-size:clamp(32px,4vw,46px);
+letter-spacing:-2px;
+margin-bottom:14px;
+}
+
+.heading p{color:var(--muted)}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.card{
+background:white;
+border:1px solid var(--border);
+padding:28px;
+border-radius:25px;
+box-shadow:0 10px 28px rgba(80,55,40,.06);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-7px);
+box-shadow:var(--shadow);
+}
+
+.icon{
+width:60px;
+height:60px;
+border-radius:18px;
+display:grid;
+place-items:center;
+font-size:27px;
+margin-bottom:20px;
+}
+
+.terracotta{background:#ffe5dc}
+.sage{background:#e4f1e2}
+.peach{background:#fff0df}
+.gold{background:#fff3c9}
+.lavender{background:#eee6f7}
+
+.card h3{font-size:19px;margin-bottom:9px}
+.card p{color:var(--muted);font-size:14px}
+
+.short{
+background:white;
+}
+
+.two-col{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center;
+}
+
+.info-art{
+background:#f7eadc;
+border-radius:30px;
+min-height:350px;
+position:relative;
+overflow:hidden;
+}
+
+.blob{
+position:absolute;
+border-radius:50%;
+}
+
+.blob.one{
+width:220px;
+height:220px;
+background:#ffd0bd;
+top:-70px;
+left:-60px;
+}
+
+.blob.two{
+width:190px;
+height:190px;
+background:#dcebd7;
+right:-45px;
+bottom:-60px;
+}
+
+.audit-card{
+position:absolute;
+width:250px;
+background:white;
+border-radius:20px;
+padding:25px;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%) rotate(-4deg);
+box-shadow:var(--shadow);
+}
+
+.audit-title{
+height:18px;
+width:70%;
+background:var(--terracotta);
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.line{
+height:9px;
+background:#eee4da;
+border-radius:10px;
+margin:9px 0;
+}
+
+.line.short{width:65%}
+
+.tick{
+margin-top:17px;
+font-size:12px;
+font-weight:700;
+}
+
+.tick span{
+display:inline-grid;
+place-items:center;
+width:21px;
+height:21px;
+border-radius:50%;
+background:var(--sage);
+color:white;
+margin-right:6px;
+}
+
+.two-col h2{
+font-size:clamp(33px,4vw,47px);
+letter-spacing:-2px;
+margin-bottom:18px;
+}
+
+.two-col p{
+color:var(--muted);
+margin-bottom:15px;
+}
+
+.link{
+color:var(--terracotta);
+font-weight:800;
+}
+
+.mini-list{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:20px;
+}
+
+.mini-list div{
+background:var(--cream);
+padding:12px;
+border-radius:12px;
+font-size:13px;
+font-weight:700;
+}
+
+.cta{
+padding:30px 0 90px;
+}
+
+.cta-box{
+background:linear-gradient(120deg,#d8664c,#e98366,#e7ad45);
+border-radius:30px;
+padding:60px 35px;
+text-align:center;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+.cta-box h2{
+font-size:clamp(32px,4vw,47px);
+margin-bottom:13px;
+}
+
+.cta-box p{
+max-width:650px;
+margin:0 auto 24px;
+}
+
+.whatsapp{
+display:inline-block;
+background:white;
+color:#398357;
+padding:14px 23px;
+border-radius:13px;
+font-weight:800;
+}
+
+footer{
+background:white;
+border-top:1px solid var(--border);
+padding:55px 0 25px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.4fr 1fr 1fr;
+gap:45px;
+margin-bottom:35px;
+}
+
+footer h3{margin-bottom:13px}
+footer p,footer li{color:var(--muted);font-size:14px}
+footer ul{list-style:none}
+footer li{margin:7px 0}
+footer a:hover{color:var(--terracotta)}
+
+.copy{
+border-top:1px solid var(--border);
+padding-top:20px;
+text-align:center;
+color:var(--muted);
+font-size:13px;
+}
+
+@media(max-width:900px){
+.navlinks{
+display:none;
+position:absolute;
+top:78px;
+left:4%;
+right:4%;
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:var(--shadow);
+flex-direction:column;
+align-items:stretch;
+}
+.navlinks.active{display:flex}
+.menu{display:block}
+.hero-grid,.two-col{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr 1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:600px){
+.hero{padding-top:65px}
+.hero h1{letter-spacing:-2px}
+section{padding:70px 0}
+.cards,.footer-grid{grid-template-columns:1fr}
+.mini-list{grid-template-columns:1fr}
+.cta-box{padding:45px 22px}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- ================= NAVIGATION ================= -->
+<header>
+<div class="container nav">
+
+<a href="index.html" class="logo">
+<span class="a">Lahore</span>
+<span class="b"> Digital</span>
+<span class="c"> Solutions</span>
+</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+
+<nav class="navlinks" id="nav">
+<a href="index.html">Home</a>
+<a href="services.html">SEO Services</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" class="nav-cta">Contact Us</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+<i></i>
+SEO Services in Lahore
+</div>
+
+<h1>
+Make Your Business
+<span>Visible</span> on Google
+</h1>
+
+<p>
+Lahore Digital Solutions provides professional
+<strong>SEO Services in Lahore</strong> including
+On-Page SEO, Technical SEO, Off-Page SEO, Local SEO
+and Link Building to help businesses build a stronger
+online presence.
+</p>
+
+<div class="buttons">
+<a href="contact.html" class="btn btn-main">Get Free SEO Audit →</a>
+<a href="services.html" class="btn btn-light">Explore SEO Services</a>
+</div>
+
+</div>
+
+<div class="hero-art">
+
+<div class="browser">
+
+<div class="browser-top">
+<i></i><i></i><i></i>
+</div>
+
+<div class="browser-body">
+
+<div class="search">
+<span>⌕</span>
+SEO Services in Lahore
+</div>
+
+<div class="metric">
+<div class="metric-top">
+Organic Visibility
+<strong>84%</strong>
+</div>
+<div class="bar one"><span></span></div>
+</div>
+
+<div class="metric">
+<div class="metric-top">
+Technical Health
+<strong>70%</strong>
+</div>
+<div class="bar two"><span></span></div>
+</div>
+
+<div class="metric">
+<div class="metric-top">
+Link Profile
+<strong>58%</strong>
+</div>
+<div class="bar three"><span></span></div>
+</div>
+
+<div class="graph">
+<svg viewBox="0 0 500 130" preserveAspectRatio="none">
+<polyline
+points="0,110 55,103 110,105 165,83 220,90 275,65 330,72 385,45 440,52 500,25"
+fill="none"
+stroke="#d8664c"
+stroke-width="5"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+</svg>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<div class="heading">
+<div class="label">What We Do</div>
+<h2>SEO Services Designed Around Your Business</h2>
+<p>
+Build a stronger search presence with practical SEO strategies
+for your website and local business.
+</p>
+</div>
 
-  <header>
-    <div class="container nav">
+<div class="cards">
+
+<div class="card">
+<div class="icon terracotta">📄</div>
+<h3>On-Page SEO</h3>
+<p>
+Optimize titles, headings, content, internal links and
+important page elements for better search relevance.
+</p>
+<a class="link" href="services.html#on-page">Learn More →</a>
+</div>
+
+<div class="card">
+<div class="icon peach">⚙️</div>
+<h3>Technical SEO</h3>
+<p>
+Identify technical problems related to crawling, indexing,
+website structure and search visibility.
+</p>
+<a class="link" href="services.html#technical">Learn More →</a>
+</div>
+
+<div class="card">
+<div class="icon sage">🔗</div>
+<h3>Off-Page SEO</h3>
+<p>
+Build relevant authority through guest posting, niche edits,
+link insertion and outreach.
+</p>
+<a class="link" href="services.html#off-page">Learn More →</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="short">
+<div class="container two-col">
+
+<div class="info-art">
+
+<div class="blob one"></div>
+<div class="blob two"></div>
+
+<div class="audit-card">
+<div class="audit-title"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line short"></div>
+
+<div class="tick">
+<span>✓</span> Website SEO Review
+</div>
+
+<div class="tick">
+<span>✓</span> Competitor Analysis
+</div>
+
+<div class="tick">
+<span>✓</span> SEO Recommendations
+</div>
+</div>
+
+</div>
 
-      <a href="#home" class="logo">
-        <span>Lahore</span>
-        <span> Digital</span>
-        <span> Solutions</span>
-      </a>
-
-      <button class="mobile-menu" onclick="toggleMenu()">☰</button>
-
-      <nav class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">SEO Services</a>
-        <a href="#local-seo">Local SEO</a>
-        <a href="#process">Process</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="nav-btn">Get Free Audit</a>
-      </nav>
-
-    </div>
-  </header>
-
-
-  <!-- ================= HERO ================= -->
-
-  <main id="home">
-
-    <section class="hero">
-
-      <div class="container hero-grid">
-
-        <div>
-
-          <div class="eyebrow">
-            <span class="dot"></span>
-            Lahore-Focused SEO Services
-          </div>
-
-          <h1>
-            SEO That Makes Your
-            <span class="purple">Business</span>
-            <span class="pink">Visible.</span>
-          </h1>
-
-          <p>
-            Professional <strong>SEO Services in Lahore</strong> designed
-            to improve your website visibility, search rankings and
-            online presence through On-Page SEO, Technical SEO,
-            Off-Page SEO and Local SEO.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#contact" class="primary-btn">
-              Get Free SEO Audit →
-            </a>
-
-            <a href="#services" class="secondary-btn">
-              Explore Services
-            </a>
-          </div>
-
-        </div>
-
+<div>
 
-        <!-- SEO DASHBOARD -->
+<div class="label">Why SEO Matters</div>
 
-        <div style="position:relative">
+<h2>
+Your Website Deserves to Be Found
+</h2>
 
-          <div class="dashboard">
+<p>
+A good website is only useful when potential customers can
+find it. SEO helps search engines understand your website
+and helps users discover your services.
+</p>
 
-            <div class="dashboard-top">
-              <div class="dashboard-title">
-                SEO Performance
-              </div>
-
-              <div class="mini-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-
-            <div class="search-box">
-              <div class="search-icon">⌕</div>
-              <span>SEO Services in Lahore</span>
-            </div>
-
-            <div class="rank-row">
-              <div>
-                <div class="rank-info">Organic Visibility</div>
-                <div class="rank-bar">
-                  <div class="rank-fill fill-purple"></div>
-                </div>
-              </div>
-              <div class="rank-number">82%</div>
-            </div>
-
-            <div class="rank-row">
-              <div>
-                <div class="rank-info">Technical Health</div>
-                <div class="rank-bar">
-                  <div class="rank-fill fill-pink"></div>
-                </div>
-              </div>
-              <div class="rank-number">68%</div>
-            </div>
-
-            <div class="rank-row">
-              <div>
-                <div class="rank-info">Content & Links</div>
-                <div class="rank-bar">
-                  <div class="rank-fill fill-orange"></div>
-                </div>
-              </div>
-              <div class="rank-number">57%</div>
-            </div>
-
-            <div class="chart">
-
-              <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-
-                <defs>
-                  <linearGradient id="areaGradient"
-                    x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0%" stop-color="#7357ff" stop-opacity=".25"/>
-                    <stop offset="100%" stop-color="#7357ff" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-
-                <path
-                  d="M0,125 C60,118 70,100 120,108 C170,116 180,75 225,82 C270,89 285,62 325,68 C365,74 390,30 430,42 C460,48 480,18 500,25 L500,150 L0,150 Z"
-                  fill="url(#areaGradient)"
-                />
-
-                <path
-                  d="M0,125 C60,118 70,100 120,108 C170,116 180,75 225,82 C270,89 285,62 325,68 C365,74 390,30 430,42 C460,48 480,18 500,25"
-                  fill="none"
-                  stroke="#7357ff"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                />
-
-              </svg>
-
-            </div>
-
-          </div>
-
-          <div class="floating-card one">
-            ↑ Better Visibility
-          </div>
-
-          <div class="floating-card two">
-            🔗 Quality Backlinks
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= TRUST ================= -->
-
-    <div class="trust">
-
-      <div class="container">
-
-        <div class="trust-box">
-
-          <div class="trust-item">
-            <span>✓</span> On-Page SEO
-          </div>
-
-          <div class="trust-item">
-            <span>✓</span> Technical SEO
-          </div>
-
-          <div class="trust-item">
-            <span>✓</span> Off-Page SEO
-          </div>
-
-          <div class="trust-item">
-            <span>✓</span> Local SEO
-          </div>
-
-          <div class="trust-item">
-            <span>✓</span> Link Building
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- ================= SERVICES ================= -->
-
-    <section id="services">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            What We Do
-          </div>
-
-          <h2>
-            Professional SEO Services in Lahore
-          </h2>
-
-          <p>
-            Practical SEO strategies covering your website,
-            technical foundation, backlinks and local search visibility.
-          </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-
-          <!-- ON PAGE -->
-
-          <article class="service-card" id="on-page">
-
-            <div class="service-icon icon-purple">
-              📄
-            </div>
-
-            <h3>On-Page SEO</h3>
-
-            <p>
-              Improve the structure and relevance of your website
-              so search engines can better understand your pages.
-            </p>
-
-            <ul>
-              <li>SEO Title & Meta Description</li>
-              <li>Heading Optimization</li>
-              <li>Internal Linking</li>
-              <li>Content Optimization</li>
-              <li>Image & Alt Text Optimization</li>
-            </ul>
-
-          </article>
-
-
-          <!-- TECHNICAL -->
-
-          <article class="service-card" id="technical">
-
-            <div class="service-icon icon-orange">
-              ⚙️
-            </div>
-
-            <h3>Technical SEO</h3>
-
-            <p>
-              Identify technical issues that can affect crawling,
-              indexing, performance and search visibility.
-            </p>
-
-            <ul>
-              <li>Google Search Console</li>
-              <li>Indexing Checks</li>
-              <li>Sitemap & Robots Review</li>
-              <li>Website Health Audit</li>
-              <li>Technical SEO Recommendations</li>
-            </ul>
-
-          </article>
-
-
-          <!-- OFF PAGE -->
-
-          <article class="service-card" id="off-page">
-
-            <div class="service-icon icon-pink">
-              🔗
-            </div>
-
-            <h3>Off-Page SEO</h3>
-
-            <p>
-              Build a stronger website authority with relevant,
-              quality-focused off-page SEO and link building.
-            </p>
-
-            <ul>
-              <li>Guest Posting</li>
-              <li>Niche Edits</li>
-              <li>Link Insertion</li>
-              <li>Blogger Outreach</li>
-              <li>Competitor Backlink Analysis</li>
-            </ul>
-
-          </article>
-
-
-          <!-- LOCAL -->
-
-          <article class="service-card">
-
-            <div class="service-icon icon-green">
-              📍
-            </div>
-
-            <h3>Local SEO</h3>
-
-            <p>
-              Improve local search visibility and help customers
-              discover your business in Lahore and nearby areas.
-            </p>
-
-            <ul>
-              <li>Google Business Profile</li>
-              <li>Local Citations</li>
-              <li>Business Listings</li>
-              <li>Local Keyword Research</li>
-              <li>Local SEO Optimization</li>
-            </ul>
-
-          </article>
-
-
-          <!-- AUDIT -->
-
-          <article class="service-card">
-
-            <div class="service-icon icon-orange">
-              🔎
-            </div>
-
-            <h3>SEO Audit</h3>
-
-            <p>
-              Find SEO problems and opportunities with a structured
-              review of your website and search visibility.
-            </p>
-
-            <ul>
-              <li>Website SEO Audit</li>
-              <li>Competitor Analysis</li>
-              <li>Technical Review</li>
-              <li>On-Page Review</li>
-              <li>Backlink Analysis</li>
-            </ul>
-
-          </article>
-
-
-          <!-- LINK BUILDING -->
-
-          <article class="service-card">
-
-            <div class="service-icon icon-purple">
-              📈
-            </div>
-
-            <h3>Link Building</h3>
-
-            <p>
-              Develop a relevant backlink strategy focused on
-              quality opportunities rather than random links.
-            </p>
-
-            <ul>
-              <li>Guest Post Backlinks</li>
-              <li>Contextual Backlinks</li>
-              <li>Niche Relevant Links</li>
-              <li>Outreach Campaigns</li>
-              <li>Backlink Research</li>
-            </ul>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="about" id="about">
-
-      <div class="container about-grid">
-
-        <div class="visual-box">
-
-          <div class="circle a"></div>
-          <div class="circle b"></div>
-
-          <div class="seo-document">
-
-            <div class="document-head"></div>
-
-            <div class="document-line"></div>
-            <div class="document-line"></div>
-            <div class="document-line short"></div>
-
-            <div class="check">
-              <i>✓</i>
-              SEO Structure
-            </div>
-
-            <div class="check">
-              <i>✓</i>
-              Search Visibility
-            </div>
-
-            <div class="check">
-              <i>✓</i>
-              Website Optimization
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="about-content">
-
-          <div class="section-label">
-            About Lahore Digital Solutions
-          </div>
-
-          <h2>
-            SEO Strategy Built Around Your Business
-          </h2>
-
-          <p>
-            Lahore Digital Solutions provides focused
-            <strong>SEO Services in Lahore</strong> for businesses
-            that want to improve their organic search presence.
-          </p>
-
-          <p>
-            Our approach combines On-Page SEO, Technical SEO,
-            Off-Page SEO, Local SEO, competitor analysis and
-            link building to create a practical search strategy.
-          </p>
-
-          <div class="feature-list">
-
-            <div class="feature">
-              ✦ White-Hat SEO Approach
-            </div>
-
-            <div class="feature">
-              ✦ Relevant Link Building
-            </div>
-
-            <div class="feature">
-              ✦ Local SEO Focus
-            </div>
-
-            <div class="feature">
-              ✦ Search Console Analysis
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= SPECIALTIES ================= -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            SEO Expertise
-          </div>
-
-          <h2>
-            From Technical Foundations to Quality Backlinks
-          </h2>
-
-          <p>
-            Every part of an SEO campaign should support the same
-            goal: stronger search visibility and a better website.
-          </p>
-
-        </div>
-
-
-        <div class="specialty-grid">
-
-
-          <div class="specialty">
-
-            <div class="specialty-icon icon-purple">
-              🔍
-            </div>
-
-            <div>
-              <h3>Keyword & Competitor Research</h3>
-
-              <p>
-                Understand what people search for and identify
-                opportunities by analyzing relevant competitors.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="specialty">
-
-            <div class="specialty-icon icon-pink">
-              🔗
-            </div>
-
-            <div>
-              <h3>Guest Posting & Niche Edits</h3>
-
-              <p>
-                Build contextual backlink opportunities through
-                relevant websites, guest posts and niche edits.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="specialty">
-
-            <div class="specialty-icon icon-orange">
-              📊
-            </div>
-
-            <div>
-              <h3>SEO Audit & Reporting</h3>
-
-              <p>
-                Review important SEO signals and turn findings
-                into practical recommendations.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="specialty">
-
-            <div class="specialty-icon icon-green">
-              📍
-            </div>
-
-            <div>
-              <h3>Google Business Profile</h3>
-
-              <p>
-                Improve local business visibility with a structured
-                Google Business Profile and Local SEO strategy.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= LOCAL SEO ================= -->
-
-    <section class="local" id="local-seo">
-
-      <div class="container local-grid">
-
-        <div>
-
-          <div class="section-label">
-            Local SEO Lahore
-          </div>
-
-          <h2>
-            Help Local Customers Find Your Business
-          </h2>
-
-          <p>
-            Local SEO helps businesses build stronger visibility
-            when people search for products and services in their
-            area. We focus on Google Business Profile optimization,
-            local relevance and business listings.
-          </p>
-
-          <div class="local-list">
-
-            <div>📍 Google Business Profile Optimization</div>
-
-            <div>🏢 Local Business Listings & Citations</div>
-
-            <div>🔎 Local Keyword Strategy</div>
-
-            <div>⭐ Business Profile Optimization</div>
-
-          </div>
-
-        </div>
-
-
-        <div class="map-card">
-
-          <div class="map-lines">
-
-            <div class="road"></div>
-            <div class="road"></div>
-            <div class="road"></div>
-
-          </div>
-
-          <div class="pin one">
-            <span>●</span>
-          </div>
-
-          <div class="pin two">
-            <span>●</span>
-          </div>
-
-          <div class="pin three">
-            <span>●</span>
-          </div>
-
-          <div class="lahore-label">
-            📍 Lahore
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= PROCESS ================= -->
-
-    <section id="process">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            Our SEO Process
-          </div>
-
-          <h2>
-            A Simple Process for Better SEO
-          </h2>
-
-          <p>
-            We start by understanding the website, identify
-            opportunities and then build a practical SEO roadmap.
-          </p>
-
-        </div>
-
-
-        <div class="process-grid">
-
-          <div class="process-card">
-
-            <div class="process-number">01</div>
-
-            <h3>Audit</h3>
-
-            <p>
-              Review the website, technical structure,
-              content, backlinks and search visibility.
-            </p>
-
-          </div>
-
-
-          <div class="process-card">
-
-            <div class="process-number">02</div>
-
-            <h3>Research</h3>
-
-            <p>
-              Analyze keywords, competitors and opportunities
-              relevant to your business.
-            </p>
-
-          </div>
-
-
-          <div class="process-card">
-
-            <div class="process-number">03</div>
-
-            <h3>Optimize</h3>
-
-            <p>
-              Improve important SEO elements and build
-              a stronger search foundation.
-            </p>
-
-          </div>
-
-
-          <div class="process-card">
-
-            <div class="process-number">04</div>
-
-            <h3>Grow</h3>
-
-            <p>
-              Continue measuring, improving and expanding
-              your SEO strategy over time.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= KEYWORDS ================= -->
-
-    <section class="keywords">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            SEO Solutions
-          </div>
-
-          <h2>
-            SEO Services for Businesses in Lahore
-          </h2>
-
-          <p>
-            Our website is structured around the SEO services
-            businesses commonly need to improve their online presence.
-          </p>
-
-        </div>
-
-
-        <div class="keyword-cloud">
-
-          <span class="keyword">SEO Services in Lahore</span>
-
-          <span class="keyword">SEO Agency Lahore</span>
-
-          <span class="keyword">SEO Expert Lahore</span>
-
-          <span class="keyword">SEO Company Lahore</span>
-
-          <span class="keyword">Local SEO Lahore</span>
-
-          <span class="keyword">Technical SEO Lahore</span>
-
-          <span class="keyword">On-Page SEO Lahore</span>
-
-          <span class="keyword">Off-Page SEO Lahore</span>
-
-          <span class="keyword">Link Building Services Lahore</span>
-
-          <span class="keyword">Guest Posting Services</span>
-
-          <span class="keyword">Niche Edit Services</span>
-
-          <span class="keyword">Google Business Profile SEO</span>
-
-          <span class="keyword">SEO Audit Lahore</span>
-
-          <span class="keyword">Competitor Backlink Analysis</span>
-
-          <span class="keyword">Google Search Console SEO</span>
-
-          <span class="keyword">Digital Marketing Lahore</span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= FAQ ================= -->
-
-    <section id="faq">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            FAQ
-          </div>
-
-          <h2>
-            Frequently Asked SEO Questions
-          </h2>
-
-          <p>
-            A few common questions about SEO services and website ranking.
-          </p>
-
-        </div>
-
-
-        <div class="faq">
-
-          <details>
-
-            <summary>
-              What SEO services do you provide in Lahore?
-            </summary>
-
-            <p>
-              We provide On-Page SEO, Technical SEO, Off-Page SEO,
-              Local SEO, SEO audits, competitor analysis and
-              link building services.
-            </p>
-
-          </details>
-
-
-          <details>
-
-            <summary>
-              Do you provide Local SEO in Lahore?
-            </summary>
-
-            <p>
-              Yes. Local SEO services include Google Business Profile
-              optimization, local keyword strategy, business listings
-              and other local search optimization activities.
-            </p>
-
-          </details>
-
-
-          <details>
-
-            <summary>
-              Do you provide guest posting and link building?
-            </summary>
-
-            <p>
-              Yes. Link building services can include guest posts,
-              niche edits, contextual backlinks, link insertion and
-              outreach-based opportunities.
-            </p>
-
-          </details>
-
-
-          <details>
-
-            <summary>
-              Can you audit my website before starting SEO?
-            </summary>
-
-            <p>
-              Yes. An SEO audit can identify technical, on-page,
-              off-page and visibility-related opportunities before
-              deciding on the next steps.
-            </p>
-
-          </details>
-
-
-          <details>
-
-            <summary>
-              How can I discuss my website SEO problem?
-            </summary>
-
-            <p>
-              You can contact Lahore Digital Solutions through WhatsApp
-              and share your website and SEO problem for an initial discussion.
-            </p>
-
-          </details>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= CTA ================= -->
-
-    <section class="cta" id="contact">
-
-      <div class="container">
-
-        <div class="cta-box">
-
-          <h2>
-            Is Your Website Not Ranking?
-          </h2>
-
-          <p>
-            Let's discuss your website, SEO problems and possible
-            opportunities. Get in touch with Lahore Digital Solutions
-            for an initial SEO discussion.
-          </p>
-
-          <a
-            class="whatsapp"
-            href="https://wa.me/923250901475"
-            target="_blank"
-            rel="noopener">
-            💬 Discuss Your SEO Problem
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- ================= FOOTER ================= -->
-
-  <footer>
-
-    <div class="container">
-
-      <div class="footer-grid">
-
-        <div>
-
-          <h3>
-            <span style="color:#7357ff">Lahore</span>
-            <span style="color:#ff5f9e"> Digital</span>
-            <span style="color:#ff9f43"> Solutions</span>
-          </h3>
-
-          <p>
-            Professional SEO Services in Lahore focused on
-            On-Page SEO, Technical SEO, Off-Page SEO, Local SEO,
-            link building and Google Business Profile optimization.
-          </p>
-
-        </div>
-
-
-        <div>
-
-          <h3>SEO Services</h3>
-
-          <ul>
-
-            <li>
-              <a href="#on-page">On-Page SEO</a>
-            </li>
-
-            <li>
-              <a href="#technical">Technical SEO</a>
-            </li>
-
-            <li>
-              <a href="#off-page">Off-Page SEO</a>
-            </li>
-
-            <li>
-              <a href="#local-seo">Local SEO</a>
-            </li>
-
-            <li>
-              <a href="#services">Link Building</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <div>
-
-          <h3>Quick Links</h3>
-
-          <ul>
-
-            <li>
-              <a href="#about">About</a>
-            </li>
-
-            <li>
-              <a href="#process">SEO Process</a>
-            </li>
-
-            <li>
-              <a href="#faq">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-
-      <div class="copyright">
-
-        © <span id="year"></span>
-        Lahore Digital Solutions. All Rights Reserved.
-
-      </div>
-
-    </div>
-
-  </footer>
-
-
-  <!-- ================= JAVASCRIPT ================= -->
-
-  <script>
-
-    function toggleMenu() {
-
-      document
-        .getElementById("navLinks")
-        .classList
-        .toggle("active");
-
-    }
-
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-      link.addEventListener("click", function() {
-
-        document
-          .getElementById("navLinks")
-          .classList
-          .remove("active");
-
-      });
-
-    });
-
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-
-  </script>
-
-
-  <!-- ================= LOCAL BUSINESS SCHEMA ================= -->
-
-  <script type="application/ld+json">
-
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Lahore Digital Solutions",
-    "url": "https://lahoredigitalsolutions.github.io/",
-    "telephone": "+923250901475",
-    "description": "Professional SEO Services in Lahore including On-Page SEO, Technical SEO, Off-Page SEO, Local SEO, Link Building and Google Business Profile optimization.",
-    "areaServed": {
-      "@type": "City",
-      "name": "Lahore"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lahore",
-      "addressRegion": "Punjab",
-      "addressCountry": "PK"
-    },
-    "serviceType": [
-      "SEO Services",
-      "On-Page SEO",
-      "Technical SEO",
-      "Off-Page SEO",
-      "Local SEO",
-      "Link Building",
-      "Guest Posting",
-      "Google Business Profile Optimization"
-    ]
-  }
-
-  </script>
-
-
-  <!-- ================= FAQ SCHEMA ================= -->
-
-  <script type="application/ld+json">
-
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What SEO services do you provide in Lahore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Lahore Digital Solutions provides On-Page SEO, Technical SEO, Off-Page SEO, Local SEO, SEO audits, competitor analysis and link building services."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide Local SEO in Lahore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Local SEO services include Google Business Profile optimization, local keyword strategy and business listings."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide guest posting and link building?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Link building services can include guest posts, niche edits, contextual backlinks, link insertion and outreach."
-        }
-      }
-    ]
-  }
-
-  </script>
+<p>
+At Lahore Digital Solutions, we focus on a practical combination
+of website optimization, technical SEO, local search and
+quality-focused link building.
+</p>
+
+<a href="about.html" class="link">Learn About Us →</a>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<div class="heading">
+<div class="label">Local SEO</div>
+<h2>Local SEO Services in Lahore</h2>
+<p>
+Improve your local online presence with Google Business Profile
+optimization, local SEO and business listings.
+</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon sage">📍</div>
+<h3>Google Business Profile</h3>
+<p>
+Improve your business profile information and local relevance
+for customers searching around Lahore.
+</p>
+</div>
+
+<div class="card">
+<div class="icon gold">🏢</div>
+<h3>Local Business Listings</h3>
+<p>
+Build consistent business information across relevant
+directories and local platforms.
+</p>
+</div>
+
+<div class="card">
+<div class="icon lavender">🔎</div>
+<h3>Local Search Strategy</h3>
+<p>
+Research local search opportunities and develop a strategy
+around relevant services and locations.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="cta">
+<div class="container">
+
+<div class="cta-box">
+
+<h2>Is Your Website Not Ranking?</h2>
+
+<p>
+Let's discuss your website, SEO problems and possible
+opportunities. Start with a simple SEO discussion.
+</p>
+
+<a href="contact.html" class="whatsapp">
+💬 Discuss My SEO Problem
+</a>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+<h3>
+<span style="color:#d8664c">Lahore</span>
+<span style="color:#78a878"> Digital</span>
+<span style="color:#e7ad45"> Solutions</span>
+</h3>
+
+<p>
+Professional SEO Services in Lahore focused on
+On-Page SEO, Technical SEO, Off-Page SEO, Local SEO,
+Link Building and Google Business Profile optimization.
+</p>
+</div>
+
+<div>
+<h3>SEO Services</h3>
+<ul>
+<li><a href="services.html#on-page">On-Page SEO</a></li>
+<li><a href="services.html#technical">Technical SEO</a></li>
+<li><a href="services.html#off-page">Off-Page SEO</a></li>
+<li><a href="services.html#local">Local SEO</a></li>
+<li><a href="services.html#link-building">Link Building</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">SEO Services</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="copy">
+© <span id="year"></span> Lahore Digital Solutions. All Rights Reserved.
+</div>
+
+</div>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("nav").classList.toggle("active");
+}
+
+document.querySelectorAll(".navlinks a").forEach(function(link){
+link.addEventListener("click",function(){
+document.getElementById("nav").classList.remove("active");
+});
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
 
 </body>
 </html>
